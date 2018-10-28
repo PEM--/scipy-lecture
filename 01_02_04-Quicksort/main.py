@@ -19,8 +19,6 @@ def quicksort(array):
       less.append(x)
     else:
       greater.append(x)
-  print('less', less)
-  print('greater', greater)
   return quicksort(less) + [pivot] + quicksort(greater)
 
 if __name__ == '__main__':
